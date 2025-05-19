@@ -1,0 +1,22 @@
+streamlit_app/
+├── app.py                   # Archivo principal que inicia la aplicación
+├── requirements.txt         # Dependencias del proyecto
+├── credentials.json         # Credenciales para acceder a Google Sheets (no incluir en control de versiones)
+├── .gitignore               # Para excluir archivos sensibles como credentials.json
+├── assets/                  # Carpeta para imágenes, logos, etc.
+│   └── logo.png             # Logo de la aplicación
+│
+├── pages/                   # Carpeta para las páginas de la aplicación
+│   ├── 1_inicio.py          # Página de inicio con resumen general
+│   ├── 2_accesibilidad.py   # Página para análisis de accesibilidad al comedor
+│   ├── 3_cumplimiento.py    # Página para análisis de cumplimiento en la entrega
+│   ├── 4_vehiculo.py        # Página para análisis de condiciones del vehículo
+│   ├── 5_actitudes.py       # Página para análisis de condiciones actitudinales
+│   └── 6_analisis_general.py # Página para análisis integrado de todos los aspectos
+│
+└── utils/                   # Carpeta para funciones de utilidad
+    ├── __init__.py          # Para importar el paquete utils
+    ├── data_loader.py       # Funciones para cargar datos desde Google Sheets
+    ├── visualizations.py    # Funciones para crear visualizaciones
+    ├── metrics.py           # Funciones para calcular métricas
+    └── filters.py           # Funciones para filtrar datos
